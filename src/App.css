@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-.content{
-  min-height: calc(100vh - 109px);
-}
 
 .App-logo {
   height: 40vmin;
