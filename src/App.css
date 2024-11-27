@@ -3,6 +3,11 @@
 }
 
 
+
+body{
+  background-color: lightgray;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -36,4 +41,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.page {
+  min-height: calc(100vh - 104px);
+  background-color: #e5e8e9;
 }
