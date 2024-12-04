@@ -6,6 +6,7 @@ import About from './pages/about.jsx';
 import Admin from './pages/admin.jsx';
 import Home from './pages/home.jsx';
 import Cart from './pages/cart.jsx';
+import List from './pages/list.jsx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
@@ -27,6 +28,7 @@ function App() {
             <Route path="/admin" element={ <Admin /> } />
             <Route path='/about' element={ <About /> } />
             <Route path="/cart" element={ <Cart /> } />
+            <Route path="/list" element={ <List /> } />
           </Routes>
 
           <Footer />

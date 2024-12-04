@@ -2,7 +2,7 @@ import GlobalContext from "../context/globalContext";
 import "./styles/quantityPicker.css";
 import { useContext, useState } from "react";
 
-function QuantityPicker(){
+function QuantityPicker(props){
 
 const context = useContext(GlobalContext);
 
@@ -11,15 +11,16 @@ const context = useContext(GlobalContext);
     function increase(){
         const val = quantity + 1;
         setQuantity(val);
+        props.onChange(val);
         
     }
 
     function decrease(){
-
         if(quantity === 1) return;
 
         const val = quantity - 1;
         setQuantity(val);
+        props.onChange(val);
     }
 
     return(

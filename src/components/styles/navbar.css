@@ -2,7 +2,7 @@
     padding: 5px;
     display: flex;
     justify-content: space-around;
-    height: 60px;
+    height: 40px;
     align-items: center;
 }
 
@@ -22,5 +22,6 @@ a:hover{
 
 
 nav {
-    background-color: #11596a;
+    background-color: black;
+    height: 80px;
 }

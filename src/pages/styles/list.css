@@ -1,0 +1,48 @@
+.list{
+    padding: 30px 50px;
+}
+
+.list h1{
+    text-align: center;
+    color: black;
+
+}
+
+.list .form{
+    padding: 20px;
+    border: 1px solid #cacdd3;
+    border-radius: 4px;
+    max-width: 350px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list .form input{
+    margin-right: 5px;
+}
+
+.list .form button{
+    margin-top: -3px;
+}
+
+.list ul{
+    list-style-type: none;
+}
+
+.list ul li{
+    display: block;
+    padding: 10px;
+    border: solid 1px #cacdd3;
+    border-radius: 4px;
+    background-color: rgb(255, 193, 8);
+    color: black;
+    margin-top: 10px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list label{
+    color: black;
+}
