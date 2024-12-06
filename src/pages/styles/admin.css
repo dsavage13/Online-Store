@@ -33,3 +33,48 @@
 .admin .parent .form .btn-container {
     text-align: center;
 }
+
+.admin .coupon-list{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.admin .coupon-list li{
+    border: 1px solid lightgray;
+    padding: 5px 20px;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.admin .coupon-list li:hover{
+    border-color: red;
+    font-weight: 600;
+}
+
+.admin .prod-list{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+.admin .prod-list li{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+.admin .prod-list li:hover{
+    border-color: red;
+    font-weight: 600;
+}
+
+.admin .prod-img{
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-left: -15px;
+}

@@ -20,14 +20,25 @@ function Cart() {
         const total = prod.price * prod.quantity;
         return total.toFixed(2);
     }
+    
+    function getCartTotal(){
+        let total = 0;
+        for(let i=0; i<cart.length; i++){
+            let prod = cart[i];
+            total += prod.price * prod.quantity;
+        }
+        return total.toFixed(2);
+    }
+
+
 
     return ( 
         <div className="cart page">
             <h1>Ready to finalize the order?</h1>
             <h3>You are 1-click away from your {getProdCount()} products</h3>
-
-            <div className="list">
-                {cart.map(prod => 
+            <div className="cart-container">
+                <div className="list">
+                    {cart.map(prod => 
                     <div className="prod-cart">
                             <img src={prod.image} alt="" />
                             <h5>{prod.title}</h5>
@@ -37,8 +48,18 @@ function Cart() {
                             
                             <button className="btn btn-sm btn-outline-danger">Remove</button>
                     </div>
-                )}
+                    )}
+                </div>
+                <div className="buy-container">
+                    <h4>Total:</h4>
+                    <h3>${getCartTotal()}</h3> 
+                    <hr />
+                    <button className="btn btn-large btn-danger">Buy Now</button>
+                </div>
+
+
             </div>
+            
         </div>
     )
 }
